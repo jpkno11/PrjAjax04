@@ -56,6 +56,7 @@ public class ArticleApiController {
 	@PostMapping("/api/articles")
 	public  ResponseEntity<Article> create(
 			@RequestBody ArticleForm dto
+			//입력된 자료들 input, select :  fetch :js fetch body: {}
 			) {		
 		Article created = articleService.create( dto );
 		ResponseEntity<Article> result

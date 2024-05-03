@@ -36,6 +36,7 @@
 
    const  commentCreateBtnEl = document.getElementById('comment-create-btn');
    commentCreateBtnEl.addEventListener('click', () => {
+       // {{idx}} : controller의 pathvariable - mustache 파일에서의 공유가능 하다
       let url = 'http://localhost:9090/api/articles/{{idx}}/comments' ;
       const comment = {
           // 새 댓글의 nick name
