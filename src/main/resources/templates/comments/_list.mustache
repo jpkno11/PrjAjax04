@@ -71,3 +71,27 @@
     </div>
   </div>
 </div>
+
+<!-- 모달이벤트 처리(다이얼로그가 화면 나타날때 해야할 일) -->
+  <script>
+    // 모달창을  찾는다
+   const commentEditModal = document.querySelector('#comment-edit-modal')
+   // 이벤트 연결 
+   commentEditModal.addEventListener('show.bs.modal',(event)=>{
+    console.dir(commentEditModal)
+   alert('show.bs.modal');
+   })
+      commentEditModal.addEventListener('show.bs.modal',(event)=>{
+      alert('shown.bs.modal');
+   })
+  </script>        
+<!-- 댓글 수정 -->
+   <script>
+    
+  </script>        
+ 
+<!-- 댓글 삭제 -->
+    <script>
+   
+  </script>        
+  
