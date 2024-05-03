@@ -33,19 +33,40 @@
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="comment-edit-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="comment-edit-modal" tabindex="-1">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h5 class="modal-title" id="exampleModalLabel">댓글 수정</h5>   
+        <button type="button"
+         class="btn-close" data-bs-dismiss="modal"
+          aria-label="Close"></button>
       </div>
+      <!-- 수정화면 -->
+
       <div class="modal-body">
-        ...
+        <!-- 댓글 수정 폼  -->
+        <form>
+         <!-- 댓글 id, article_id 둘 다 hidden 으로 전송   -->
+         <input type="hidden" id= "edit-comment-id"/>
+         <input type="hidden" id= "edit-comment-id"/>
+         <!--닉네임-->
+             <div class="mb-3"> 
+             <label class="form-label"> 닉네임</label> 
+              <input type= "text" class= "form-control" id= "edit-comment-nickname" />
+		     </div>
+         <!-- 댓글 본문 -->
+         <div class="mb-3">
+           <label class="form-label">댓글 본문</label>
+           <textarea type="text" class="form-control" rows="3" id="edit-comment-body"></textarea>
+         </div>
+       
+         
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" 
+        data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary"id="comment-update-btn">Save changes</button>
       </div>
     </div>
   </div>
